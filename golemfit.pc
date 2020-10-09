@@ -1,0 +1,13 @@
+prefix=/usr/local
+
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: GolemFit
+Description: Diffuse fitter.
+URL: https://github.com/arguelles/GolemFit
+Version: 1.0.0
+Requires: gsl >= 1.15 hdf5 >= 1.8 squids >= 1.2.0 nusquids >= 1.10.1
+Libs: -L${libdir} -lGolemFit
+Cflags: -I${includedir}/GolemFit
+
